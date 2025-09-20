@@ -3,7 +3,7 @@ Repository to kick start your journey with GitHub Actions
 
 ## Comparing with Jenkins 
 
-### Advantages of GitHub Actions over Jenkins
+### Advantages of GitHub Actions through Jenkins
 
 - Hosting: Jenkins is self-hosted, meaning it requires its own server to run, while GitHub Actions is hosted by GitHub and runs directly in your GitHub repository.
 
