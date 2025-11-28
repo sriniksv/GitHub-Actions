@@ -28,6 +28,10 @@ jobs:
         python -m pytest addition.py
   test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8, 3.9]
+        
     steps:
     - name: View detailed Software Versions via a pre-installed file
       run: |
