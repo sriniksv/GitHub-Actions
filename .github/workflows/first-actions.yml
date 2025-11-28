@@ -46,6 +46,9 @@ jobs:
         echo "Job Status: ${{ job.status }}"
         echo "------------------------------------------"
 
+    - name: Dump All Runner Environment Variables
+       run: env
+
     - name: View detailed Software Versions after the dependency installation
       run: |
         # This specific path works for Ubuntu/Linux runners
