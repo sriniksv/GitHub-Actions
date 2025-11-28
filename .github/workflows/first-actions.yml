@@ -12,6 +12,15 @@ jobs:
         python-version: [3.8, 3.9]
 
     steps:
+    - name: View detailed Software Versions via a pre-installed file
+      run: |
+        # This specific path works for Ubuntu/Linux runners
+        echo "--- Detailed Software List (partial) ---"
+        cat /usr/local/lib/node_modules/npm/package.json
+        # Note: A full list is usually linked in the 'Set up job' log step UI.
+        echo "------------------------------------------"
+
+    steps:
     - uses: actions/checkout@v3
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -27,3 +36,21 @@ jobs:
       run: |
         cd src
         python -m pytest addition.py
+    steps:
+    - name: print configuration of the Runner
+      run: |
+        echo "--- GitHub Hosted Runner Configuration ---"
+        echo "OS Name: ${{ runner.os }}"
+        echo "OS Architecture: ${{ runner.arch }}"
+        echo "Temp Directory: ${{ runner.temp }}"
+        echo "Workspace Directory: ${{ runner.workspace }}"
+        echo "Job Status: ${{ job.status }}"
+        echo "------------------------------------------"
+
+    - name: View detailed Software Versions after the dependency installation
+      run: |
+        # This specific path works for Ubuntu/Linux runners
+        echo "--- Detailed Software List (partial) ---"
+        cat /usr/local/lib/node_modules/npm/package.json
+        # Note: A full list is usually linked in the 'Set up job' log step UI.
+        echo "------------------------------------------"
