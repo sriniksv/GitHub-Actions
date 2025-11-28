@@ -8,16 +8,7 @@ jobs:
     strategy:
       matrix:
         python-version: [3.8, 3.9]
-
-    steps:
-    - name: View detailed Software Versions via a pre-installed file
-      run: |
-        # This specific path works for Ubuntu/Linux runners
-        echo "--- Detailed Software List (partial) ---"
-        cat /usr/local/lib/node_modules/npm/package.json
-        # Note: A full list is usually linked in the 'Set up job' log step UI.
-        echo "------------------------------------------"
-
+    
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python
@@ -45,6 +36,9 @@ jobs:
         echo "Job Status: ${{ job.status }}"
         echo "------------------------------------------"
 
+    - name: Dump All Runner Environment Variables
+      run: env
+ 
     - name: View detailed Software Versions via a pre-installed file
       run: |
         # This specific path works for Ubuntu/Linux runners
