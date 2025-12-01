@@ -48,7 +48,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            echo "Pulling latest container image..."
+            echo "Pulling  latest container image..."
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
             
             echo "Stopping existing container..."
