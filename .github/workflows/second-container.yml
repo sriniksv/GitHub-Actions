@@ -2,7 +2,7 @@ name: Container CI/CD Pipeline
 
 on:
   schedule:
-    - cron: "30 15 * * *"
+    - cron: "34 15 * * *"
 
 env:
   IMAGE_NAME: myapp
