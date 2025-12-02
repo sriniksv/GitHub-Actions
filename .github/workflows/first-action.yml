@@ -3,7 +3,7 @@ name: Self-hosted test
 on:
   workflow_dispatch:
   schedule:
-    - cron: "07 17 * * *"
+    - cron: "09 17 * * *"
  
 jobs:
 
