@@ -28,7 +28,7 @@ jobs:
     steps:
     - name: print configuration of the Runner
       run: |
-        echo "--- GitHub Hosted Runner Configuration ---"
+        echo "---  GitHub Hosted Runner Configuration ---"
         echo "OS Name: ${{ runner.os }}"
         echo "OS Architecture: ${{ runner.arch }}"
         echo "Temp Directory: ${{ runner.temp }}"
