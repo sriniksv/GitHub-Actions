@@ -2,7 +2,7 @@ name: Self-hosted test
  
 on:
   schedule:
-    - cron : '29 15 * * *'
+    - cron : "34 15 * * *"
     
  
 jobs:
