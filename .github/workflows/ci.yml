@@ -1,5 +1,4 @@
 name: Container CI/CD Pipeline
-
 on: [push]
 
 env:
