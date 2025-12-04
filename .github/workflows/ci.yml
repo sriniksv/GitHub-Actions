@@ -22,8 +22,8 @@ jobs:
 
       - name: Tag Docker Image
         run: |
-          docker tag myapp-image:latest myapp/myapp:latest
+          docker tag myapp-image:latest mydockerhub/myapp:latest
 
       - name: Push Image to Docker Hub
         run: |
-          docker push myapp/myapp:latest
+          docker push mydockerhub/myapp:latest
