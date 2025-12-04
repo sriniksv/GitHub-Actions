@@ -22,8 +22,8 @@ jobs:
 
       - name: Tag Docker Image (if pushing)
         run: |
-          docker tag myapp-image:latest sriniksv/mydockerhub/myapp:latest
+          docker tag myapp-image:latest mydockerhub/myapp:latest
 
       - name: Push Image to Docker Hub (optional)
         run: |
-          docker push sriniksv/mydockerhub/myapp:latest
+          docker push mydockerhub/myapp:latest
