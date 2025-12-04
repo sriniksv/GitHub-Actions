@@ -1,6 +1,7 @@
 name: Container CI/CD Pipeline
 
-on: [push]
+on:
+  workflow_dispatch:
 
 env:
   IMAGE_NAME: myapp
