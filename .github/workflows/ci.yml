@@ -1,10 +1,6 @@
 name: Container CI/CD Pipeline
 
 on: [push]
-  
-
-env:
-  IMAGE_NAME: myapp
 
 jobs:
   build_and_push:
