@@ -1,4 +1,5 @@
 name: Container CI/CD Pipeline
+run-name: ci-with-test-workflow
 on: [push]
 
 env:
