@@ -1,6 +1,9 @@
 name: Container CI/CD Pipeline
 run-name: ci-with-test-workflow
-on: [push]
+
+# on: [push]
+on:
+  workflow_dispatch:
 
 env:
   IMAGE_NAME: myapp
